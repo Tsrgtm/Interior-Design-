@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up Side Interior Designs</title>
+
+
+    <script src="https://kit.fontawesome.com/24f74c1771.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+
+</head>
+<style>
+
+
+</style>
+<body>
+
+
+    <header class="navigation fixed-nav">
+        <nav>
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+            </div>
+            <div class="nav-bar">
+                <div class="overlay" onclick="offcanvas()"></div>
+                <ul>
+                    <a href="./about-us.html">
+                        <li>About us</li>
+                    </a>
+                    <a href="./projects.html">
+                        <li>Projects</li>
+                    </a>
+                    <a href="./process.html">
+                        <li>Our process</li>
+                    </a>
+                    <a href="./contact.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+    
+                <div class="hamburger-icon">
+                    <i class="fa-solid fa-bars" onclick="offcanvas()"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="contact-hero other-hero">
+        <div class="other-content">
+            <h1>Let's Connect: Reach Out to Upside</h1>
+            <p>Ready to turn your design dreams into reality? We're just a message away. Whether you have a question, want to discuss a project, or simply want to say hello, feel free to reach out.</p>
+        </div>
+    </section>
+
+
+    <section class="contact-container">
+        <div class="contact-left">
+            <img src="../images/contact-left.jpg" alt="process 1">
+        </div>
+
+        <div class="contact-right">
+            <div class="contact-title">
+                <h2>Contact Us</h2>
+                <p>Fill the form below to get a call from us.</p>
+            </div>
+
+            <form class="contact-form" onsubmit="successmsg()">
+                <div class="input-row">
+                    <div class="input-row-item">
+                        <label for="fname">First name</label>
+                        <input type="text" name="fname" id="fname" required>
+                    </div>
+
+                    <div class="input-row-item">
+                        <label for="lname">Last name</label>
+                        <input type="text" name="lname" id="lname" required>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-row-item">
+                        <label for="fname">Email</label>
+                        <input type="email" name="mail" id="mail" required>
+                    </div>
+
+                    <div class="input-row-item">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                </div>
+
+                <div class="select-form">
+                    <label for="topic">Choose a service:</label>
+                    <select name="topic" id="topic" required>
+                        <option value="none" disabled selected hidden>Choose a service...</option>
+                        <option value="residential-design">Residential Design</option>
+                        <option value="commercial-design">Commercial Design</option>
+                        <option value="furniture-selection">Furniture Selection</option>
+                        <option value="color-consultation">Color Consultation</option>
+                    </select>
+                </div>                
+
+                <div class="radio-form">
+                    <label for="radio-form">Which best describes you ?</label>
+                    <div class="radio-row">
+                        <div class="radio-options">
+                            <div class="radio-opt">
+                                <input type="radio" id="design" name="topic" value="Design Enthusiast">
+                                <label for="design">Design Enthusiast</label>
+                            </div>
+                            
+                            <div class="radio-opt">
+                                <input type="radio" id="inquiry" name="topic" value="Curious Inquirer">
+                                <label for="inquiry">Curious Inquirer</label>
+                            </div>
+                            
+                            <div class="radio-opt">
+                                <input type="radio" id="feedback" name="topic" value="Feedback Contributor">
+                                <label for="feedback">Feedback Contributor</label>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="radio-options">
+                            <div class="radio-opt">
+                                <input type="radio" id="project" name="topic" value="Project Starter">
+                                <label for="project">Project Starter</label>
+                            </div>
+                            
+                            <div class="radio-opt">
+                                <input type="radio" id="collaboration" name="topic" value="Collaboration Seeker">
+                                <label for="collaboration">Collaboration Seeker</label>
+                            </div>
+
+                            <div class="radio-opt">
+                                <input type="radio" id="Other" name="topic" value="Other">
+                                <label for="Other">Other</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-form">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message">
+                </div>
+
+                <div class="terms-form">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">I accept the <span style="text-decoration: underline;">term</span></label>
+                </div>
+
+                <button type="submit" class="button-1">Submit</button>
+            </form>
+        </div>
+
+    </section>
+
+
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../images/logo.png" alt="logo">
+            </div>
+            <ul class="footer-menu">
+                <a href="./about-us.html">
+                    <li>About us</li>
+                </a>
+                <a href="./projects.html">
+                    <li>Projects</li>
+                </a>
+                <a href="./process.html">
+                    <li>Our process</li>
+                </a>
+                <a href="./contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+
+
+            <ul class="footer-socials">
+                <a href="https://www.facebook.com/upsidelab.io/">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                </a>
+                <a href="https://www.instagram.com/upsideinteriors">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                </a>
+                <a href="https://twitter.com/UpsideInteriors">
+                    <li><i class="fa-brands fa-x-twitter"></i></li>
+                </a>
+                <a href="https://www.linkedin.com/company/upside-interiors">
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </a>
+                <a href="https://www.youtube.com/channel/UCAm4pnUU6jVB5blKyiWOhaw">
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                </a>
+            </ul>
+        </div>
+        <div class="footer-credits">
+            <p class="copyrights">&#169; 2023 Upside. All right reserved.</p>
+            <div class="extra-pages">
+                <a href="#" class="extra-menu">Privacy Policy</a>
+                <a href="#" class="extra-menu">Terms of Service</a>
+                <a href="#" class="extra-menu">Cookies Setting</a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+    <script src="../js/contact.js"></script>
+    <script src="../js/off-canvas.js"></script>
+    
+    
+    
+    </body>
+    </html>

@@ -1,0 +1,40 @@
+.about-hero {
+    background-image: url(../images/about-hero.jpg);
+}
+
+.about-us-info {
+    display: flex;
+    gap: 80px;
+    background: #DAE2DF;
+
+}
+
+.about-left, .about-right {
+    width: 50%;
+}
+
+.about-right img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-us-info {
+        display: flex;
+        gap: 80px;
+        background: #DAE2DF;
+        justify-content: center;
+        padding: 40px 0px;
+    
+    }
+    
+    .about-left {
+        width: 90%;
+    }
+
+    .about-right {
+        display: none;
+    }
+
+}

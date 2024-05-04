@@ -1,0 +1,132 @@
+.contact-hero {
+    background-image: url(../images/contact-hero.jpg);
+}
+
+.contact-container {
+    display: flex;
+    padding: 0;
+    width: 100%;
+}
+
+.contact-left ,
+.contact-right {
+    width: 50%;
+}
+
+.contact-left img {
+    width: 100%;
+    object-fit: cover;
+    height: 100% ;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #DAE2DF ;
+}
+
+.contact-title {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 70%;
+    align-items: center;
+}
+
+.input-row {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+.input-row-item,
+.select-form,
+.radio-form,
+.message-form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 50%;
+}
+
+.radio-row {
+    display: flex;
+    width: 100%;
+}
+
+.select-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=select],
+input[type=tel],
+#topic {
+    height: 48px;
+    border: 1px solid #000;
+    max-width: 100%;
+    padding: 0px 8px;
+}
+
+
+#message {
+    height: 180px;
+}
+
+label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .contact-left {
+        display: none;
+    }
+
+    .contact-right {
+        width: 100%;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .radio-row {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .radio-options {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+}
+
+
